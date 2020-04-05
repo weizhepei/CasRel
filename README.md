@@ -3,14 +3,12 @@
 This repository contains the source code and dataset for the paper: **A Novel Hierarchical Binary Tagging Framework for Relational Triple Extraction**. [Zhepei Wei](https://weizhepei.com/), [Jianlin Su](https://spaces.ac.cn/), [Yue Wang](https://ils.unc.edu/~wangyue/), Tian Yuan and [Yi Chang](http://yichang-cs.com/). To appear in ACL 2020. [[arxiv]](https://arxiv.org/abs/1909.03227)
 
 
-## Datasets
+## Overview
 
-- [NYT](https://github.com/weizhepei/HBT/tree/master/data/NYT)
-- [WebNLG](https://github.com/weizhepei/HBT/tree/master/data/WebNLG)
-- [ACE04](https://github.com/weizhepei/HBT/tree/master/data/ACE04)
-- [NYT10-HRL](https://github.com/weizhepei/HBT/tree/master/data/NYT10-HRL)
-- [NYT11-HRL](https://github.com/weizhepei/HBT/tree/master/data/NYT11-HRL)
-- [Wiki-KBP](https://github.com/weizhepei/HBT/tree/master/data/Wiki-KBP)
+At the core of the proposed HBT framework is the fresh perspective that instead of treating relations as discrete labels on entity pairs, we actually model the relations as functions that map subjects to objects. More precisely, instead of learning relation classifiers f(s; o) -> r, we learn relation-specific taggers f_{r}(s) -> o, each of which recognizes the possible object(s) of a given subject under a specific relation. Under this framework, relational triple extraction is a two-step process: first we identify all possible subjects in a sentence; then for each subject, we apply relation-specific taggers to simultaneously identify all possible relations and the corresponding objects.
+
+![overview](https://weizhepei.com/images/HBT_overview.png)
+
 
 ## Requirements
 
@@ -21,11 +19,14 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
 - keras-bert
 - tensorflow-gpu == 1.13.1
 
-## Overview
+## Datasets
 
-At the core of the proposed HBT framework is the fresh perspective that instead of treating relations as discrete labels on entity pairs, we actually model the relations as functions that map subjects to objects. More precisely, instead of learning relation classifiers f(s; o) -> r, we learn relation-specific taggers f_{r}(s) -> o, each of which recognizes the possible object(s) of a given subject under a specific relation. Under this framework, relational triple extraction is a two-step process: first we identify all possible subjects in a sentence; then for each subject, we apply relation-specific taggers to simultaneously identify all possible relations and the corresponding objects.
-
-![overview](https://weizhepei.com/images/HBT_overview.png)
+- [NYT](https://github.com/weizhepei/HBT/tree/master/data/NYT)
+- [WebNLG](https://github.com/weizhepei/HBT/tree/master/data/WebNLG)
+- [ACE04](https://github.com/weizhepei/HBT/tree/master/data/ACE04)
+- [NYT10-HRL](https://github.com/weizhepei/HBT/tree/master/data/NYT10-HRL)
+- [NYT11-HRL](https://github.com/weizhepei/HBT/tree/master/data/NYT11-HRL)
+- [Wiki-KBP](https://github.com/weizhepei/HBT/tree/master/data/Wiki-KBP)
 
 ## Usage
 
