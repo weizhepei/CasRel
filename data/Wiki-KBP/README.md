@@ -1,0 +1,1 @@
+We use the same version as Dai et al. (2019) adopted, where the [training](https://github.com/LiyuanLucasLiu/ReHession) set is from (Liu et al., 2017) and the [test](https://github.com/INK-USC/DS-RelationExtraction) set is from (Ren et al., 2017).
