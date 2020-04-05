@@ -1,4 +1,4 @@
-## HBT
+## A Novel Hierarchical Binary Tagging Framework for Relational Triple Extraction
 
 This repository contains the source code and dataset for the paper: **A Novel Hierarchical Binary Tagging Framework for Relational Triple Extraction**. [Zhepei Wei](https://weizhepei.com/), [Jianlin Su](https://spaces.ac.cn/), [Yue Wang](https://ils.unc.edu/~wangyue/), Tian Yuan and [Yi Chang](http://yichang-cs.com/). To appear in ACL 2020. [[arxiv]](https://arxiv.org/abs/1909.03227)
 
