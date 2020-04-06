@@ -30,11 +30,11 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
 
 ## Usage
 
-1. **Get Pretrained BERT model for Keras**
+1. **Get Pre-trained BERT model for Keras**
 
-   Download the Google's  pretrained BERT model **[(`BERT-Base, Cased`)](https://storage.googleapis.com/bert_models/2018_10_18/cased_L-12_H-768_A-12.zip)**. Then decompress it under `pretrained_bert_models/`. More pre-trained models are available [here](https://github.com/google-research/bert#pre-trained-models).
+   Download Google's pre-trained BERT model **[(`BERT-Base, Cased`)](https://storage.googleapis.com/bert_models/2018_10_18/cased_L-12_H-768_A-12.zip)**. Then decompress it under `pretrained_bert_models/`. More pre-trained models are available [here](https://github.com/google-research/bert#pre-trained-models).
 
-2. **Build dataset in the from of triples**
+2. **Build dataset in the form of triples**
 
    Take the NYT dataset for example: 
 
@@ -50,7 +50,7 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
    python generate.py
    ```
 
-   c) Finally, build dataset in the from of triples
+   c) Finally, build dataset in the form of triples
 
    ```shell
    cd HBT/data/NYT
@@ -75,17 +75,17 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
 
 4. **Train and select the model**
 
-   Specify the running mode and dataset at command line
+   Specify the running mode and dataset at the command line
 
    ```shell
    python run.py ---train=True --dataset=NYT
    ```
 
-   The model wieght that leads to best performance on validation set will be stored in `saved_weights/DATASET/`.
+   The model weights that lead to the best performance on validation set will be stored in `saved_weights/DATASET/`.
 
 5. **Evaluate on the test set**
 
-   Specify the test dataset at command line
+   Specify the test dataset at the command line
 
    ```shell
    python run.py --dataset=NYT
