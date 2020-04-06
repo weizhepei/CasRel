@@ -6,7 +6,7 @@ This repository contains the source code and dataset for the paper: **A Novel Hi
 
 ## Overview
 
-At the core of the proposed HBT framework is the fresh perspective that instead of treating relations as discrete labels on entity pairs, we actually model the relations as functions that map subjects to objects. More precisely, instead of learning relation classifiers f(s; o) -> r, we learn relation-specific taggers f_{r}(s) -> o, each of which recognizes the possible object(s) of a given subject under a specific relation. Under this framework, relational triple extraction is a two-step process: first we identify all possible subjects in a sentence; then for each subject, we apply relation-specific taggers to simultaneously identify all possible relations and the corresponding objects.
+At the core of the proposed HBT framework is the fresh perspective that instead of treating relations as discrete labels on entity pairs, we actually model the relations as functions that map subjects to objects. More precisely, instead of learning relation classifiers f(s,o) -> r, we learn relation-specific taggers f_{r}(s) -> o, each of which recognizes the possible object(s) of a given subject under a specific relation. Under this framework, relational triple extraction is a two-step process: first we identify all possible subjects in a sentence; then for each subject, we apply relation-specific taggers to simultaneously identify all possible relations and the corresponding objects.
 
 ![overview](https://weizhepei.com/images/HBT_overview.png)
 
@@ -31,7 +31,7 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
 
 ## Usage
 
-1. **Get Pre-trained BERT model for Keras**
+1. **Get pre-trained BERT model for Keras**
 
    Download Google's pre-trained BERT model **[(`BERT-Base, Cased`)](https://storage.googleapis.com/bert_models/2018_10_18/cased_L-12_H-768_A-12.zip)**. Then decompress it under `pretrained_bert_models/`. More pre-trained models are available [here](https://github.com/google-research/bert#pre-trained-models).
 
