@@ -124,3 +124,14 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
        "lack": []
    }
    ```
+   
+## Citation
+
+```
+@InProceedings{wei2020Novel,
+  author    = {Wei, Zhepei and Su, Jianlin and Wang, Yue and Tian, Yuan and Chang, Yi},
+  booktitle = {ACL},
+  title     = {A Novel Hierarchical Binary Tagging Framework for Relational Triple Extraction},
+  year      = {2020},
+}
+```
