@@ -1,11 +1,11 @@
-## A Novel Hierarchical Binary Tagging Framework for Relational Triple Extraction
+## A Novel Cascade Binary Tagging Framework for Relational Triple Extraction
 
-This repository contains the source code and dataset for the paper: **A Novel Hierarchical Binary Tagging Framework for Relational Triple Extraction**. [Zhepei Wei](https://weizhepei.com/), [Jianlin Su](https://spaces.ac.cn/), [Yue Wang](https://ils.unc.edu/~wangyue/), Yuan Tian and [Yi Chang](http://yichang-cs.com/). To appear in ACL 2020. [[arxiv]](https://arxiv.org/abs/1909.03227)
+This repository contains the source code and dataset for the paper: **A Novel Cascade Binary Tagging Framework for Relational Triple Extraction**. [Zhepei Wei](https://weizhepei.com/), [Jianlin Su](https://spaces.ac.cn/), [Yue Wang](https://ils.unc.edu/~wangyue/), Yuan Tian and [Yi Chang](http://yichang-cs.com/). To appear in ACL 2020. [[arxiv]](https://arxiv.org/abs/1909.03227)
 
 
 ## Overview
 
-At the core of the proposed HBT framework is the fresh perspective that instead of treating relations as discrete labels on entity pairs, we actually model the relations as functions that map subjects to objects. More precisely, instead of learning relation classifiers f(s,o) -> r, we learn relation-specific taggers f_{r}(s) -> o, each of which recognizes the possible object(s) of a given subject under a specific relation. Under this framework, relational triple extraction is a two-step process: first we identify all possible subjects in a sentence; then for each subject, we apply relation-specific taggers to simultaneously identify all possible relations and the corresponding objects.
+At the core of the proposed CasRel framework is the fresh perspective that instead of treating relations as discrete labels on entity pairs, we actually model the relations as functions that map subjects to objects. More precisely, instead of learning relation classifiers f(s,o) -> r, we learn relation-specific taggers f_{r}(s) -> o, each of which recognizes the possible object(s) of a given subject under a specific relation. Under this framework, relational triple extraction is a two-step process: first we identify all possible subjects in a sentence; then for each subject, we apply relation-specific taggers to simultaneously identify all possible relations and the corresponding objects.
 
 ![overview](https://weizhepei.com/images/HBT_overview.png)
 
@@ -21,12 +21,12 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
 
 ## Datasets
 
-- [NYT](https://github.com/weizhepei/HBT/tree/master/data/NYT)
-- [WebNLG](https://github.com/weizhepei/HBT/tree/master/data/WebNLG)
-- [ACE04](https://github.com/weizhepei/HBT/tree/master/data/ACE04)
-- [NYT10-HRL](https://github.com/weizhepei/HBT/tree/master/data/NYT10-HRL)
-- [NYT11-HRL](https://github.com/weizhepei/HBT/tree/master/data/NYT11-HRL)
-- [Wiki-KBP](https://github.com/weizhepei/HBT/tree/master/data/Wiki-KBP)
+- [NYT](https://github.com/weizhepei/CasRel/tree/master/data/NYT)
+- [WebNLG](https://github.com/weizhepei/CasRel/tree/master/data/WebNLG)
+- [ACE04](https://github.com/weizhepei/CasRel/tree/master/data/ACE04)
+- [NYT10-HRL](https://github.com/weizhepei/CasRel/tree/master/data/NYT10-HRL)
+- [NYT11-HRL](https://github.com/weizhepei/CasRel/tree/master/data/NYT11-HRL)
+- [Wiki-KBP](https://github.com/weizhepei/CasRel/tree/master/data/Wiki-KBP)
 
 ## Usage
 
@@ -41,10 +41,10 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
    a) Switch to the corresponding directory and download the dataset 
 
    ```shell
-   cd HBT/data/NYT/raw_NYT
+   cd CasRel/data/NYT/raw_NYT
    ```
 
-   b) Follow the [instructions]((https://github.com/weizhepei/HBT/tree/master/data/NYT/raw_NYT)) at the same directory, and just run
+   b) Follow the [instructions]((https://github.com/weizhepei/CasRel/tree/master/data/NYT/raw_NYT)) at the same directory, and just run
 
    ```shell
    python generate.py
@@ -53,7 +53,7 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
    c) Finally, build dataset in the form of triples
 
    ```shell
-   cd HBT/data/NYT
+   cd CasRel/data/NYT
    python build_data.py
    ```
 
@@ -61,7 +61,7 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
 
 3. **Specify the experimental settings**
 
-   By default, we use the following settings in [run.py](https://github.com/weizhepei/HBT/blob/master/run.py):
+   By default, we use the following settings in [run.py](https://github.com/weizhepei/CasRel/blob/master/run.py):
 
    ```json
    {
@@ -131,7 +131,7 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
 @InProceedings{wei2020Novel,
   author    = {Wei, Zhepei and Su, Jianlin and Wang, Yue and Tian, Yuan and Chang, Yi},
   booktitle = {ACL},
-  title     = {A Novel Hierarchical Binary Tagging Framework for Relational Triple Extraction},
+  title     = {A Novel Cascade Binary Tagging Framework for Relational Triple Extraction},
   year      = {2020},
 }
 ```
