@@ -128,7 +128,7 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
 ## Citation
 
 ```
-@InProceedings{wei2020Novel,
+@InProceedings{wei2020CasRel,
   author    = {Wei, Zhepei and Su, Jianlin and Wang, Yue and Tian, Yuan and Chang, Yi},
   booktitle = {ACL},
   title     = {A Novel Cascade Binary Tagging Framework for Relational Triple Extraction},
