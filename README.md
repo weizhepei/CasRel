@@ -1,6 +1,6 @@
 ## A Novel Cascade Binary Tagging Framework for Relational Triple Extraction
 
-This repository contains the source code and dataset for the paper: **A Novel Cascade Binary Tagging Framework for Relational Triple Extraction**. [Zhepei Wei](https://weizhepei.com/), [Jianlin Su](https://spaces.ac.cn/), [Yue Wang](https://ils.unc.edu/~wangyue/), Yuan Tian and [Yi Chang](http://yichang-cs.com/). To appear in ACL 2020. [[arxiv]](https://arxiv.org/abs/1909.03227)
+This repository contains the source code and dataset for the paper: **A Novel Cascade Binary Tagging Framework for Relational Triple Extraction**. [Zhepei Wei](https://weizhepei.com/), [Jianlin Su](https://spaces.ac.cn/), [Yue Wang](https://ils.unc.edu/~wangyue/), Yuan Tian and [Yi Chang](http://yichang-cs.com/). ACL 2020. [[pdf]](https://arxiv.org/abs/1909.03227)
 
 
 ## Overview
@@ -128,10 +128,11 @@ This repo was tested on Python 3.7 and Keras 2.2.4. The main requirements are:
 ## Citation
 
 ```
-@InProceedings{wei2020CasRel,
-  author    = {Wei, Zhepei and Su, Jianlin and Wang, Yue and Tian, Yuan and Chang, Yi},
-  booktitle = {ACL},
-  title     = {A Novel Cascade Binary Tagging Framework for Relational Triple Extraction},
-  year      = {2020},
+@inproceedings{wei2020CasRel,
+  title={A Novel Cascade Binary Tagging Framework for Relational Triple Extraction},
+  author={Wei, Zhepei and Su, Jianlin and Wang, Yue and Tian, Yuan and Chang, Yi},
+  booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  pages={1476--1488},
+  year={2020}
 }
 ```
